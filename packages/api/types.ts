@@ -2587,10 +2587,6 @@ type TSocketEndpoints = {
         request: UnsubscribeEmailRequest;
         response: UnsubscribeEmailResponse;
     };
-    verify_email_cellxpert: {
-        request: VerifyEmailCellxpertRequest;
-        response: VerifyEmailCellxpertResponse;
-    };
     verify_email: {
         request: VerifyEmailRequest;
         response: VerifyEmailResponse;
