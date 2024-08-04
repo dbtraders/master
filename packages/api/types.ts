@@ -221,8 +221,6 @@ import type {
     UpdateContractHistoryResponse,
     UpdateContractRequest,
     UpdateContractResponse,
-    VerifyEmailCellxpertRequest,
-    VerifyEmailCellxpertResponse,
     VerifyEmailRequest,
     VerifyEmailResponse,
 } from '@deriv/api-types';
