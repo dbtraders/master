@@ -62,11 +62,11 @@ const AppWrapper = observer(() => {
     const init_render = React.useRef(true);
     const { ui } = useStore();
     const { url_hashed_values, is_mobile } = ui;
-    const hash = ['dashboard', 'bot_builder', 'apollo_bots', 'chart', 'copy_trader', 'analysis_page', 'tutorial'];
+    const hash = ['dashboard', 'bot_builder', 'analysistool', 'free_bots', 'manual', 'tutorial'];
 
     let tab_value: number | string = active_tab;
     const GetHashedValue = (tab: number) => {
-        tab_value = url_hashed_values?.split('#')[1];
+        tab_value = url_hashed_values?.split('/')[1];
         if (!tab_value) return tab;
         return Number(hash.indexOf(String(tab_value)));
     };
@@ -226,9 +226,9 @@ const AppWrapper = observer(() => {
                             {/* <Chart show_digits_stats={true}/> */}
                         </div>
 
-                        <div icon='IcClient' label={<Localize i18n_default_text='Replicator' />} id={'id-copy-trader'}>
+                        {/* <div icon='IcClient' label={<Localize i18n_default_text='Replicator' />} id={'id-copy-trader'}>
                             <CopyTrader />
-                        </div>
+                        </div> */}
 
                         <div
                             icon='IcTutorialsTabs'

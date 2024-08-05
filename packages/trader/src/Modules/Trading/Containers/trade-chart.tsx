@@ -186,10 +186,6 @@ const TradeChart = observer((props: TTradeChartProps) => {
                     )}
                 </SmartChart>
             )}
-            <div className='chart_btns'>
-                <button onClick={() => saveWhichChart('deriv')}>Deriv</button>
-                <button onClick={() => saveWhichChart('tradingview')}>Trading View</button>
-            </div>
         </>
     );
 });
