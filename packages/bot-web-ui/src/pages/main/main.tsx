@@ -195,10 +195,17 @@ const AppWrapper = observer(() => {
                             label={<Localize i18n_default_text='Bot Builder' />}
                             id='id-bot-builder'
                         />
+                        <div
+                            icon='IcDbotViewDetail'
+                            label={<Localize i18n_default_text='Analysistool' />}
+                            id={'id-analysis-page'}
+                        >
+                            <AnalysisPage />
+                        </div>
 
                         <div
                             icon='IcGear'
-                            label={<Localize i18n_default_text='Apollo Bots' />}
+                            label={<Localize i18n_default_text='Free Bots' />}
                             id='id-dbot-apollo-bots'
                         >
                             <ApolloBots handleTabChange={handleTabChange} />
@@ -206,7 +213,7 @@ const AppWrapper = observer(() => {
 
                         <div
                             icon='IcChartsTabDbot'
-                            label={<Localize i18n_default_text='A-Trader' />}
+                            label={<Localize i18n_default_text='Manual' />}
                             id={
                                 is_chart_modal_visible || is_trading_view_modal_visible
                                     ? 'id-charts--disabled'
@@ -219,16 +226,8 @@ const AppWrapper = observer(() => {
                             {/* <Chart show_digits_stats={true}/> */}
                         </div>
 
-                        <div icon='IcClient' label={<Localize i18n_default_text='Copy Trader' />} id={'id-copy-trader'}>
+                        <div icon='IcClient' label={<Localize i18n_default_text='Replicator' />} id={'id-copy-trader'}>
                             <CopyTrader />
-                        </div>
-
-                        <div
-                            icon='IcDbotViewDetail'
-                            label={<Localize i18n_default_text='Market Analysis' />}
-                            id={'id-analysis-page'}
-                        >
-                            <AnalysisPage />
                         </div>
 
                         <div
