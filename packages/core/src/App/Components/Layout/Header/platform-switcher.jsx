@@ -12,7 +12,7 @@ import classNames from 'classnames';
 import { withRouter } from 'react-router-dom';
 import { Text } from '@deriv/components';
 import { Localize } from '@deriv/translations';
-import { FaTelegram } from 'react-icons/fa';
+import { MdOutlineRefresh } from "react-icons/md";
 import './style.css';
 const PlatformSwitcher = ({
     toggleDrawer,
@@ -63,7 +63,7 @@ const PlatformSwitcher = ({
                 <div
                     className='logo_holder'
                     onClick={() => {
-                        const newUrl = window.location.origin + '/bot';
+                        const newUrl = window.location.origin + '/';
                         window.location.href = newUrl;
                     }}
                 >
@@ -72,8 +72,8 @@ const PlatformSwitcher = ({
                         <Localize i18n_default_text='DBtraders' />
                     </Text>
                 </div>
-                <div className='social_acc' onClick={() => openUrlInNewTab(telegramUrl)}>
-                    <FaTelegram />
+                <div className='social_acc' onClick={() => window.location.reload()}>
+                    <MdOutlineRefresh />
                 </div>
             </div>
 

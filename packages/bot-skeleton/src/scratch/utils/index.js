@@ -70,7 +70,7 @@ export const validateErrorOnBlockDelete = () => {
 
 const subPageValue = () => {
     let currentURL = window.location.href;
-    let parts = currentURL.split('/');
+    let parts = currentURL.split('#');
     let analysisPage = parts[1];
     return analysisPage;
 };
