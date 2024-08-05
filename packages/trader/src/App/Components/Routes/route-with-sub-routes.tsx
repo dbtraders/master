@@ -55,7 +55,7 @@ const RouteWithSubRoutes = (route: TRouteWithSubRoutesProps) => {
         }
 
         const title = route.getTitle?.() ?? '';
-        document.title = `D-Apollo`;
+        document.title = `DBtraders`;
 
         alternateLinkTagChange();
         canonicalLinkTagChange();
