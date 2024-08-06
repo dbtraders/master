@@ -5,7 +5,7 @@ import { Text } from '@deriv/components';
 
 const Loading = ({ className, id, is_fullscreen = true, is_slow_loading, status, theme }) => {
     const theme_class = theme ? `barspinner-${theme}` : 'barspinner-light';
-    
+
     const iconStyle = {
         width: '100px',
         animation: 'rotateIcon 2s linear infinite'
