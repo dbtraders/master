@@ -8,6 +8,20 @@ export type TSidebarItem = {
 
 export const SIDEBAR_INTRO: TSidebarItem[] = [
     {
+        label: localize('RISK DISCLAIMER!!!'),
+        content: [
+            {
+                data: localize(
+                    'Deriv offers complex derivatives, such as options and contracts for difference (“CFDs”). These products may not be suitable for all clients, and trading them puts you at risk.'
+                ),
+            },
+            { data: localize('Please make sure that you understand the following risks before trading Deriv products') },
+            { data: localize('a) you may lose some or all of the money you invest in the trade') },
+            { data: localize('b) if your trade involves currency conversion, exchange rates will affect your profit and loss. You should never trade with borrowed money or with money that you cannot afford to lose.') },
+        ],
+        link: false,
+    },
+    {
         label: localize('Welcome to DBtraders Bot!'),
         content: [
             {

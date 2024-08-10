@@ -153,8 +153,7 @@ const CopyTrader = observer(() => {
             )}
 
             <header className={`title ${is_dark_mode_on && 'dark_active'}`}>
-                <h1>{localize('Add Copy Trading Tokens')}</h1>
-                <small>{localize('developed by DBtraders')}</small>
+                <small>{localize('Add tokens to Replicator')}</small>
             </header>
             <div className={`input_content ${is_dark_mode_on && 'dark_active'}`}>
                 <div>
@@ -166,7 +165,7 @@ const CopyTrader = observer(() => {
                 <div className='enable_sync'>
                     <div className='enable_disable'>
                         <input type='checkbox' checked={config.copy_trading.is_active} onChange={handleCPChange} />
-                        <Localize i18n_default_text='On/Off' />
+                        <Localize i18n_default_text='Enable replicator' />
                     </div>
                     <div className='sync_data'>
                         <button onClick={() => handleSynceData()}>{syncing ? '...' : 'Sync Tokens'}</button>

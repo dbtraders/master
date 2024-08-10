@@ -62,7 +62,7 @@ const AppWrapper = observer(() => {
     const init_render = React.useRef(true);
     const { ui } = useStore();
     const { url_hashed_values, is_mobile } = ui;
-    const hash = ['dashboard', 'bot_builder', 'analysistool', 'free_bots', 'manual', 'tutorial'];
+    const hash = ['analysistool', 'bot_builder', 'dashboard', 'free_bots', 'manual', 'tutorial'];
 
     let tab_value: number | string = active_tab;
     const GetHashedValue = (tab: number) => {
@@ -183,11 +183,11 @@ const AppWrapper = observer(() => {
                         top
                     >
                         <div
-                            icon='IcDashboardComponentTab'
-                            label={<Localize i18n_default_text='Dashboard' />}
-                            id='id-dbot-dashboard'
+                            icon='IcDbotViewDetail'
+                            label={<Localize i18n_default_text='Analysistool' />}
+                            id={'id-analysis-page'}
                         >
-                            <Dashboard handleTabChange={handleTabChange} />
+                            <AnalysisPage />
                         </div>
 
                         <div
@@ -195,12 +195,13 @@ const AppWrapper = observer(() => {
                             label={<Localize i18n_default_text='Bot Builder' />}
                             id='id-bot-builder'
                         />
+
                         <div
-                            icon='IcDbotViewDetail'
-                            label={<Localize i18n_default_text='Analysistool' />}
-                            id={'id-analysis-page'}
+                            icon='IcDashboardComponentTab'
+                            label={<Localize i18n_default_text='Dashboard' />}
+                            id='id-dbot-dashboard'
                         >
-                            <AnalysisPage />
+                            <Dashboard handleTabChange={handleTabChange} />
                         </div>
 
                         <div
@@ -226,9 +227,9 @@ const AppWrapper = observer(() => {
                             {/* <Chart show_digits_stats={true}/> */}
                         </div>
 
-                        {/* <div icon='IcClient' label={<Localize i18n_default_text='Replicator' />} id={'id-copy-trader'}>
+                        <div icon='IcClient' label={<Localize i18n_default_text='Replicator' />} id={'id-copy-trader'}>
                             <CopyTrader />
-                        </div> */}
+                        </div>
 
                         <div
                             icon='IcTutorialsTabs'
