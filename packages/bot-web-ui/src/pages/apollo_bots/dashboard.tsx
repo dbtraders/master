@@ -58,24 +58,6 @@ const ApolloBots = observer(({ handleTabChange }: TMobileIconGuide) => {
                     />
                     <div className='quick-panel'>
                         <div
-                            className={classNames('tab__dashboard__header', {
-                                'apollo_tab__dashboard__header--listed': !is_mobile && has_dashboard_strategies,
-                            })}
-                        >
-                            {!has_dashboard_strategies && (
-                                <Text
-                                    className='title'
-                                    as='h2'
-                                    color='prominent'
-                                    size={is_mobile ? 's' : 'sm'}
-                                    line_height='xxl'
-                                    weight='bold'
-                                >
-                                    {localize('Load or build your bot')}
-                                </Text>
-                            )}
-                        </div>
-                        <div
                             className={classNames('tab__dashboard__centered', {
                                 'tab__dashboard__centered--listed': !is_mobile && has_dashboard_strategies,
                                 'tab__dashboard__centered--not-listed': !has_dashboard_strategies,
