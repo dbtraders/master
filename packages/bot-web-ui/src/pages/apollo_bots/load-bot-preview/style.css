@@ -25,7 +25,7 @@
 }
 
 .apollo-list__item:hover {
-    background: linear-gradient(45deg, rgba(48, 47, 73, 0.939) 0%), rgba(0, 212, 255, 0.858) 55%;
+    background: linear-gradient(65deg, rgba(48, 47, 73, 0.939) 60%), rgba(0, 212, 255, 0.858) 10%;
     color: #00ffff;
 }
 
